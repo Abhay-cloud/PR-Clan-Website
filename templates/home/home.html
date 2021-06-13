@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://images-ext-2.discordapp.net/external/oKF4OlfydonO0l-UDrPXGygjsBZk4pd8uVq_sNUBIs4/https/cdn.discordapp.com/emojis/677333829374967851.png" type="image/png">
+   
+  {% comment %} Google {% endcomment %}
+  <script data-ad-client="ca-pub-1931270572403539" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta name="google-site-verification" content="rt1_eBE8BZ4AClAgroh32sn49BV3dp1AMSl_t18uu-A" />
+   <!-- Meta stuff for search engines and Discord's link preview -->
+        <meta name="og:site_name" content="PR: Passionate Racers (One of the Biggest clan in HCR2)">
+        <meta name="og:title" content="PR: Passionate Racers">
+        <meta name="og:description" content="One of the oldest and greatest clan in the history of Hill Climb Racing 2.">
+        <meta name="og:image" content="https://images-ext-2.discordapp.net/external/oKF4OlfydonO0l-UDrPXGygjsBZk4pd8uVq_sNUBIs4/https/cdn.discordapp.com/emojis/677333829374967851.png">
+        <meta name="theme-color" content="#FF8C00">
+  {% comment %} Important {% endcomment %}
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <title>PR: Passionate Racers</title>
+  <style>
+    .logoimg {
+      width: 40px;
+    }
+
+    .nav-link {
+
+      font-family: 'Merriweather', serif;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: black;
+    }
+
+      {
+      % comment %
+    }
+
+    
+    body {
+      background: #1e1d26;
+    }
+
+    .h2,
+    h2 {
+      color: white;
+    }
+
+    .col.p-4.d-flex.flex-column.position-static {
+      background: #1d1f21;
+    }
+
+    .text-primary {
+      color: white !important;
+    }
+
+   .news2{
+     color: white;
+   } 
+
+   .blink{
+    animation: blinker 1s linear infinite;
+    color: red;
+
+   }
+
+   @keyframes blinker {
+  50% {
+    opacity: 0;
+   } 
+ } 
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7289da;">
+    <a class="navbar-brand" href="#">
+      <img class="logoimg"
+        src="https://images-ext-1.discordapp.net/external/5FZz4eGi-MSgPKG6kcwSQ1zraVd950EwdvVMDVa-GtI/https/cdn.discordapp.com/emojis/799620100088922123.gif" src="PR Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/daily">Daily</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/weekly">Weekly</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+
+      </ul>
+      <div class="ml-auto form-inline">
+        <form method="GET" action="/search" class="my-2 my-lg-0 mx-3">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query"
+            id="query">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <a href='https://discord.gg/MXkdXX7' role='button' target='_blank' class="btn btn-outline-dark my-2">Discord
+          Server</a>
+      </div>
+    </div>
+  </nav>
+
+
+  {% comment %} <div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>We have opened mod applications. <a href="/apply">Apply now!</a></strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div> {% endcomment %}
+<div class="news2 h4">
+
+<marquee>
+{% for news1 in news  %}
+<strong class="blink">New!</strong>
+{{news1.headLine}} 
+{% endfor %}
+
+</marquee>
+</div>
+  <section class="jumbotron text-center">
+
+  
+  
+
+    <div class="container">
+      <img
+        src="https://images-ext-2.discordapp.net/external/oKF4OlfydonO0l-UDrPXGygjsBZk4pd8uVq_sNUBIs4/https/cdn.discordapp.com/emojis/677333829374967851.png"
+        alt="logo" width="120">
+      <h1 class="jumbotron-heading"><span id="app"></span></h1>
+      <p class="lead text-muted">One of the oldest and greatest hcr2 clan in the history.</p>
+      <a href="/about" class="btn btn-secondary my-2">Read More...</a>
+      <p>
+        <a href="/daily" class="btn btn-danger my-2">Daily Results</a>
+        <a href="/weekly" class="btn btn-success my-2">Weekly Results</a>
+        <a href="#pinned" class="btn btn-warning my-2">Pinned Posts</a>
+
+      </p>
+    </div>
+  </section>
+
+
+  {% comment %} Pinned post {% endcomment %}
+
+  <div class="container" id="pinned">
+    <h2>Pinned Posts:</h2>
+
+    {% for post in daily %}
+
+    {% if post.isPinned %}
+
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row my-3 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">Author: {{post.author}} <span class="float-right">&#128204</span></strong>
+        <h3 class="mb-0"><a href="/daily/{{post.slug}}">Daily Challenge: {{post.title}}</a></h3>
+        <div class="mb-1 text-muted">{{post.timeStamp}}</div>
+        <p class="card-text mb-auto">{{post.content |safe| truncatechars:30}}</p>
+        <div class="my-2">
+          <a href="/daily/{{post.slug}}" role="button" class="btn btn-outline-light">Continue reading</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+
+    {% for post in weekly %}
+    {% if post.isPinned %}
+
+
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row my-3 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong class="d-inline-block mb-2 text-primary">Author: {{post.author}} <span class="float-right">📌</span></strong>
+        <h3 class="mb-0"><a href="/weekly/{{post.slug}}">Weekly Challenge: {{post.title}}</a></h3>
+        <div class="mb-1 text-muted">{{post.timeStamp}}</div>
+        <p class="card-text mb-auto">{{post.content |safe| truncatechars:30}}</p>
+        <div class="my-2">
+          <a href="/weekly/{{post.slug}}" role="button" class="btn btn-outline-light">Continue reading</a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+
+
+  <!-- Discord -->
+  
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<footer class="container-fluid bg-dark my-0 py-3 text-light">
+    <p class="mb-0 text-center">© 2020-2021 Passionate Racers</p>
+    <p class="mb-0 text-center">
+      <a href="#">Back to top</a>
+    </p>
+
+  </footer>
+
+  <script>
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+      loop: true
+    });
+
+    typewriter.typeString('Welcome to Passionate Racers')
+      .pauseFor(100)
+      .deleteAll()
+      .typeString('Here you\'ll see <strong>Daily Results</strong>')
+      .pauseFor(100)
+      .deleteChars(13)
+      .typeString('<strong>Weekly Results</strong>')
+      .pauseFor(100)
+      .deleteChars(14)
+      .typeString('<strong>Monthly Winners</strong>')
+      .pauseFor(100)
+      .deleteAll()
+      .typeString('and more...')
+      .pauseFor(100)
+      .start();
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

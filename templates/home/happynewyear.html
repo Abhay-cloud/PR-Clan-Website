@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The new changes 2021</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+     <link rel="icon" href="https://images-ext-2.discordapp.net/external/oKF4OlfydonO0l-UDrPXGygjsBZk4pd8uVq_sNUBIs4/https/cdn.discordapp.com/emojis/677333829374967851.png" type="image/png">
+ 
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <style>
+        body {
+    background-color: #16151d;
+    color: white;
+}
+       .social{
+           font-size: 200px;
+       }
+       .title{
+           font-size: 30px;
+       }
+       .demo{
+           font-size: 25px;
+       }
+      
+    </style>
+<body>
+
+<div class="container text-center">
+    <div class="social">
+        <img src="https://images-ext-2.discordapp.net/external/-wF6_ak8cIpm2u6UPlrYQP7nk_muN-Cyjb8agWZgcbI/https/cdn.discordapp.com/emojis/734413249864531979.gif"
+        draggable="false">
+    </div>
+<div class="title text-center">New Year countdown and Nitro Drop Timer</div>
+<div id="demo" class="demo text-center my-2">
+</div>
+</div>
+
+
+
+    <script>
+    {% comment %} var _0x4fdf=['floor','demo','getElementById','Happy\x20New\x20Year\x202021!\x20<br><a\x20href=\x27/a6H3qn9j\x27\x20role=\x27button\x27\x20target=\x27_blank\x27\x20class=\x27btn\x20btn-outline-dark\x20pulse\x20my-3\x27>Claim\x20your\x20nitro</a>','open','getTime','innerHTML','UTC','/a6H3qn9j'];(function(_0xe325e4,_0x31de5b){var _0x4fdf4e=function(_0x634efd){while(--_0x634efd){_0xe325e4['push'](_0xe325e4['shift']());}};_0x4fdf4e(++_0x31de5b);}(_0x4fdf,0xac));var _0x634e=function(_0xe325e4,_0x31de5b){_0xe325e4=_0xe325e4-0xf4;var _0x4fdf4e=_0x4fdf[_0xe325e4];return _0x4fdf4e;};var _0x4c28ac=_0x634e,countDownDate=new Date(Date[_0x4c28ac(0xfa)](0x7e4,0xb,0x1f,0x12,0x1e,0x0,0x0))[_0x4c28ac(0xf8)](),x=setInterval(function(){var _0x223b53=_0x4c28ac,_0x478f7a=new Date()['getTime'](),_0x59222b=countDownDate-_0x478f7a,_0x3e50d3=Math[_0x223b53(0xfc)](_0x59222b/(0x3e8*0x3c*0x3c*0x18)),_0x410c22=Math['floor'](_0x59222b%(0x3e8*0x3c*0x3c*0x18)/(0x3e8*0x3c*0x3c)),_0x53aaa9=Math['floor'](_0x59222b%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)),_0x554903=Math['floor'](_0x59222b%(0x3e8*0x3c)/0x3e8);document[_0x223b53(0xf5)](_0x223b53(0xf4))[_0x223b53(0xf9)]=_0x3e50d3+'d\x20'+_0x410c22+'h\x20'+_0x53aaa9+'m\x20'+_0x554903+'s\x20',_0x59222b<0x0&&(clearInterval(x),document[_0x223b53(0xf5)](_0x223b53(0xf4))[_0x223b53(0xf9)]=_0x223b53(0xf6),window[_0x223b53(0xf7)](_0x223b53(0xfb)));},0x3e8); {% endcomment %}
+    
+    var countDownDate = new Date("Dec 31, 2020 11:31 am").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "Happy New Year 2021! <br><a href='/a6H3qn9j' role='button' target='_blank' class='btn btn-outline-dark pulse my-3'>Claim your nitro</a>";
+            window.open("/a6H3qn9j") 
+        }
+        }, 1000);
+    </script>
+    <!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>

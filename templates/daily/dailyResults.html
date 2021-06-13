@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Daily Result{% endblock title %}
+{% block dailyactive %} active {% endblock dailyactive %}
+{% load extras %}
+{% block style %}
+    body {
+        background-color: #16151d;;
+        color: white;    
+        }
+
+{% endblock style %}
+{% block head %}
+<meta name="og:title" content="Daily Challenge: {{post.title}}">
+<meta name="og:description" content="{{post.desc|safe}}">
+{% endblock head %}
+
+{% block body %} 
+
+<div class="container my-3">
+        <h2 class="blog-post-title">Daily Challenge: {{post.title}}</h2>
+        <p class="blog-post-meta">{{post.timeStamp}}<a href="#"> By {{post.author}}</a>
+         </p>
+        
+        <p><code>{{post.desc|safe}}</p></code>
+</div>
+
+{% endblock body %} 

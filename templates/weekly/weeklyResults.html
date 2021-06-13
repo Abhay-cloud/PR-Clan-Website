@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Weekly Result{% endblock title %}
+{% block weeklyactive %} active {% endblock weeklyactive %}
+{% load extras %}
+{% block style %}
+    body {
+        background-color: #16151d;;
+        color: white;    
+        }
+
+{% endblock style %}
+{% block head %}
+<meta name="og:title" content="Weekly Challenge: {{post.title}}">
+<meta name="og:description" content="To be apart of the competition and race amongst the best of the best, make sure to add [PR]Pie•Ø•My 🇺 🇸 to your friends list">
+{% endblock head %}
+{% block body %} 
+
+<div class="container my-3">
+        <h2 class="blog-post-title">Weekly Challenge: {{post.title}}</h2>
+        <p class="blog-post-meta">{{post.timeStamp}}<a href="#"> By {{post.author}}</a>
+         </p>
+        
+        <p><code>{{post.desc|safe}}</p></code>
+</div>
+
+{% endblock body %} 

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <script data-ad-client="ca-pub-1931270572403539" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://images-ext-2.discordapp.net/external/oKF4OlfydonO0l-UDrPXGygjsBZk4pd8uVq_sNUBIs4/https/cdn.discordapp.com/emojis/677333829374967851.png" type="image/png">
+
+    {% block head %}
+    {% endblock head %}
+    <meta name="google-site-verification" content="rt1_eBE8BZ4AClAgroh32sn49BV3dp1AMSl_t18uu-A" />
+     <!-- Meta stuff for search engines and Discord's link preview -->
+        <meta name="og:site_name" content="PR: Passionate Racers (One of the Biggest clan in HCR2)">
+        <meta name="og:title" content="PR: Passionate Racers">
+        <meta name="og:description" content="One of the oldest and greatest clan in the history of Hill Climb Racing 2.">
+        <meta name="og:image" content="https://images-ext-2.discordapp.net/external/oKF4OlfydonO0l-UDrPXGygjsBZk4pd8uVq_sNUBIs4/https/cdn.discordapp.com/emojis/677333829374967851.png">
+        <meta name="theme-color" content="#FF8C00">
+    <title>{% block title %}{% endblock title %}</title>
+    <style>
+      .logoimg{
+        width: 40px;
+      }.nav-link{
+        
+        font-family: 'Merriweather', serif;
+      }
+     
+      .navbar-dark .navbar-nav .nav-link {
+    color:black;
+               }
+     
+      
+    {% block style %}
+    {% endblock style %}
+    </style>
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #7289da;">
+  <a class="navbar-brand" href="#">
+  <img class="logoimg" src="https://images-ext-1.discordapp.net/external/5FZz4eGi-MSgPKG6kcwSQ1zraVd950EwdvVMDVa-GtI/https/cdn.discordapp.com/emojis/799620100088922123.gif" src="PR Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item {% block homeactive %} {% endblock homeactive %}">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item {% block dailyactive %} {% endblock dailyactive %}">
+        <a class="nav-link" href="/daily">Daily</a>
+      </li>
+        <li class="nav-item {% block weeklyactive %} {% endblock weeklyactive %}">
+        <a class="nav-link" href="/weekly">Weekly</a>
+      </li>
+        <li class="nav-item {% block aboutactive %} {% endblock aboutactive %}">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+      
+    </ul>
+  <div class="ml-auto form-inline">
+      <form method="GET" action="/search" class="my-2 my-lg-0 mx-3">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query"
+          id="query">
+      <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    <a href='https://discord.gg/MXkdXX7' role='button' target='_blank' class="btn btn-danger my-2">Discord Server</a>
+  </div> 
+  </div>
+</nav>
+
+
+
+
+
+{% block body %}
+  {% endblock body %}
+
+<footer class="container my-0 py-3 text-light">
+    <p class="mb-0 text-center">© 2020-2021 Passionate Racers</p>
+
+  </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script> {% block script %} {% endblock script %} </script>
+     
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typed.js"></script>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    
+  </body>
+  
+</footer>
+</html>

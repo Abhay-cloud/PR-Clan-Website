@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock title %}
+{% block contactactive %} active {% endblock contactactive %}
+{% block body %}
+<div class="container my-3">
+<h2>Moderator Application PRGC</h2>
+<form action = "#" method="post">
+{% csrf_token %}
+   <div class="form-group">
+    <label for="name">Your Discord Username</label>
+    <input type="name" class="form-control" name="username" id="username" aria-describedby="name" placeholder="Pies#6969">
+   </div>
+
+   <div class="form-group">
+    <label for="name">What time zone are you in?</label>
+    <input type="name" class="form-control" name="timezone" id="timezone" aria-describedby="timezone" placeholder="IST(UTC +5:30)">
+   </div>
+
+   <div class="form-group">
+    <label for="name">What country do you live in?</label>
+    <input type="name" class="form-control" name="country" id="country" aria-describedby="country" placeholder="India">
+   </div>
+
+   <div class="form-group">
+    <label for="name">How old are you?</label>
+    <input type="name" class="form-control" name="age" id="age" aria-describedby="age" placeholder="9">
+   </div>
+
+   <div class="form-group">
+    <label for="name">Why do you think you should become a mod?</label>
+    <textarea class="form-control" name="content" id="content" cols="30" rows="3" placeholder="Write your response here"></textarea>
+   </div>
+
+   <div class="form-group">
+    <label for="name">How long can you be active on the server everyday?</label>
+    <input type="name" class="form-control" name="activetime" id="activetime" aria-describedby="activetime" placeholder="18 Hours Per Day">
+   </div>
+
+   <div class="form-group">
+    <label for="name">Do you have any past experience as a moderator?</label>
+    <input type="name" class="form-control" name="pastexperience" id="pastexperience" aria-describedby="pastexperience" placeholder="No">
+   </div>
+    
+    <h3>Action Section</h3>
+ 
+   <div class="form-group">
+    <label for="name">What would you do if you’re the only Mod online and see some of your teammates bullying someone?</label>
+    <textarea class="form-control" name="action1" id="action1" cols="30" rows="3" placeholder="Write your response here"></textarea>
+   </div>
+
+   <div class="form-group">
+    <label for="name">What would you do if someone breaks the rules?</label>
+    <textarea class="form-control" name="action2" id="action2" cols="30" rows="3" placeholder="Write your response here"></textarea>
+   </div>
+
+   <div class="form-group">
+    <label for="name">What would you do if someone uses N word?</label>
+    <textarea class="form-control" name="action3" id="action3" cols="30" rows="3" placeholder="Write your response here.."></textarea>
+   </div>
+
+   <div class="form-group">
+    <label for="name">What would you do if someone pinging mods for no reason?</label>
+    <textarea class="form-control" name="action4" id="action4" cols="30" rows="3" placeholder="Write your response here.. "></textarea>
+   </div>
+
+    <div class="form-group">
+    <label for="name">What would you do if someone starts unnecessary drama?</label>
+    <textarea class="form-control" name="action5" id="action5" cols="30" rows="3" placeholder="Write your response here.. "></textarea>
+   </div>
+  
+  
+   {% comment %} <center><button type="submit" class="btn btn-primary">Submit</button></center> {% endcomment %}
+   <div class="my-2"><label for="myCheck"><b><u>You are agreed to our rules by clicking on next checkBox:<u><b></label> 
+   <center><input type="checkbox" id="myCheck" onclick="myFunction()"></center>
+   <center><button type="submit" class="btn btn-primary" style="display:none" id="btn1">Submit</button></center>
+    </div>
+</form>
+</div>
+{% endblock body %}
+{% block script %}
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("btn1");
+  if (checkBox.checked == true){
+     text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+{% endblock script %}
